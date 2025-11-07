@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:kristencrabtree/features/exercise/presentation/view/screens/completed/completed_screen.dart';
+import 'package:kristencrabtree/features/exercise/presentation/view/screens/emotional_body_excavation/emotional_body_excavation_screen.dart';
 import 'package:kristencrabtree/features/parent/presentation/view/parent_screen.dart';
 import '../../core/constant/route_names.dart';
 import '../../features/home/presentation/view/home_screen.dart';
@@ -17,6 +19,8 @@ class AppRoutes {
      RouteNames.myQuotes: (context) => const MyQuotes(),
      RouteNames.meditationAndWisdom: (context) => const MeditationAndWisdom(),
      RouteNames.favourites: (context) => const Favourites(),
+     RouteNames.emotionalBodyExcavation: (context) => const EmotionalBodyExcavationScreen(),
+     RouteNames.completedScreen: (context) => const CompletedScreen(),
 
   };
 }

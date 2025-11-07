@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
+import 'package:kristencrabtree/features/exercise/presentation/view_model/emotional_body_excavation_screen_provider.dart';
 import '../../features/parent/presentation/view_model/parent_screen_provider.dart';
 import '../services/api_service/api_services.dart';
 
@@ -13,5 +14,8 @@ Future<void> diConfig() async {
 
   getIt.registerLazySingleton<ParentScreenProvider>(
         () => ParentScreenProvider(),
+  );
+  getIt.registerLazySingleton<EmotionalBodyExcavationScreenProvider>(
+        () => EmotionalBodyExcavationScreenProvider(),
   );
 }

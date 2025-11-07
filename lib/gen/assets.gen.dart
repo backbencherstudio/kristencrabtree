@@ -14,8 +14,20 @@ import 'package:flutter/widgets.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/ai_star.svg
+  String get aiStar => 'assets/icons/ai_star.svg';
+
+  /// File path: assets/icons/bolt.svg
+  String get bolt => 'assets/icons/bolt.svg';
+
+  /// File path: assets/icons/corner_up_right.svg
+  String get cornerUpRight => 'assets/icons/corner_up_right.svg';
+
   /// File path: assets/icons/cottation.svg
   String get cottation => 'assets/icons/cottation.svg';
+
+  /// File path: assets/icons/cottation_swap.svg
+  String get cottationSwap => 'assets/icons/cottation_swap.svg';
 
   /// File path: assets/icons/current_streak.svg
   String get currentStreak => 'assets/icons/current_streak.svg';
@@ -23,17 +35,44 @@ class $AssetsIconsGen {
   /// File path: assets/icons/daily_excercise.svg
   String get dailyExcercise => 'assets/icons/daily_excercise.svg';
 
+  /// File path: assets/icons/edit.svg
+  String get edit => 'assets/icons/edit.svg';
+
+  /// File path: assets/icons/edit_n.svg
+  String get editN => 'assets/icons/edit_n.svg';
+
   /// File path: assets/icons/excercise_completed.svg
   String get excerciseCompleted => 'assets/icons/excercise_completed.svg';
 
   /// File path: assets/icons/explore.svg
   String get explore => 'assets/icons/explore.svg';
 
+  /// File path: assets/icons/favourites.svg
+  String get favourites => 'assets/icons/favourites.svg';
+
   /// File path: assets/icons/fire.svg
   String get fire => 'assets/icons/fire.svg';
 
+  /// File path: assets/icons/heart.svg
+  String get heart => 'assets/icons/heart.svg';
+
+  /// File path: assets/icons/heart_filled.svg
+  String get heartFilled => 'assets/icons/heart_filled.svg';
+
+  /// File path: assets/icons/image.svg
+  String get image => 'assets/icons/image.svg';
+
   /// File path: assets/icons/meditation.svg
   String get meditation => 'assets/icons/meditation.svg';
+
+  /// File path: assets/icons/message.svg
+  String get message => 'assets/icons/message.svg';
+
+  /// File path: assets/icons/mike.svg
+  String get mike => 'assets/icons/mike.svg';
+
+  /// File path: assets/icons/more_vertical.svg
+  String get moreVertical => 'assets/icons/more_vertical.svg';
 
   /// File path: assets/icons/new_journal.svg
   String get newJournal => 'assets/icons/new_journal.svg';
@@ -53,21 +92,62 @@ class $AssetsIconsGen {
   /// File path: assets/icons/parent_murmuration.svg
   String get parentMurmuration => 'assets/icons/parent_murmuration.svg';
 
+  /// File path: assets/icons/play.svg
+  String get play => 'assets/icons/play.svg';
+
+  /// File path: assets/icons/sent.svg
+  String get sent => 'assets/icons/sent.svg';
+
+  /// File path: assets/icons/settings.svg
+  String get settings => 'assets/icons/settings.svg';
+
+  /// File path: assets/icons/star.svg
+  String get star => 'assets/icons/star.svg';
+
+  /// File path: assets/icons/success.svg
+  String get success => 'assets/icons/success.svg';
+
+  /// File path: assets/icons/tik.svg
+  String get tik => 'assets/icons/tik.svg';
+
+  /// File path: assets/icons/trophy.svg
+  String get trophy => 'assets/icons/trophy.svg';
+
   /// List of all assets
   List<String> get values => [
+    aiStar,
+    bolt,
+    cornerUpRight,
     cottation,
+    cottationSwap,
     currentStreak,
     dailyExcercise,
+    edit,
+    editN,
     excerciseCompleted,
     explore,
+    favourites,
     fire,
+    heart,
+    heartFilled,
+    image,
     meditation,
+    message,
+    mike,
+    moreVertical,
     newJournal,
     notification,
     parentExercises,
     parentHome,
     parentJournal,
     parentMurmuration,
+    play,
+    sent,
+    settings,
+    star,
+    success,
+    tik,
+    trophy,
   ];
 }
 
@@ -77,8 +157,11 @@ class $AssetsImagesGen {
   /// File path: assets/images/user.png
   AssetGenImage get user => const AssetGenImage('assets/images/user.png');
 
+  /// File path: assets/images/xp.png
+  AssetGenImage get xp => const AssetGenImage('assets/images/xp.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [user];
+  List<AssetGenImage> get values => [user, xp];
 }
 
 class Assets {

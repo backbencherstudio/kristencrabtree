@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import '../../../../../app/widgets/appbar/simple_appbar.dart';
+import '../../../../../app/widgets/appbar/custom_app_bar.dart';
+import '../../../../../core/constant/app_colors.dart';
 
 class MyQuotes extends StatefulWidget {
   const MyQuotes({super.key});
@@ -27,7 +28,7 @@ class _MyQuotesState extends State<MyQuotes> {
                     width: double.infinity,
 
                     decoration: BoxDecoration(
-                      border: Border.all(color: Color(0xffC6A664)),
+                      border: Border.all(color: AppColors.primary),
                       borderRadius: BorderRadius.circular(16.r),
                     ),
                     child: Padding(
@@ -53,7 +54,7 @@ class _MyQuotesState extends State<MyQuotes> {
                             children: [
                               Text(
                                 '- Kristen Crabtree',
-                                style: TextStyle(fontWeight: FontWeight.w500,fontSize: 14,color: Color(0xffC6A664)),
+                                style: TextStyle(fontWeight: FontWeight.w500,fontSize: 14,color: AppColors.primary),
                               ),
                               Spacer(),
                               Text(

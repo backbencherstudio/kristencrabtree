@@ -3,6 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:kristencrabtree/core/constant/route_names.dart';
 
+import '../../../core/constant/app_colors.dart';
+
 class ExerciseGrid extends StatefulWidget {
   const ExerciseGrid({super.key});
 
@@ -76,9 +78,9 @@ class _ExerciseGridState extends State<ExerciseGrid> {
           width: 160.w,
           height: 80.h,
           decoration: BoxDecoration(
-            color: isSelected ? const Color(0xffC6A664) : Colors.transparent,
+            color: isSelected ? AppColors.primary : Colors.transparent,
             border: Border.all(
-              color: isSelected ? const Color(0xffC6A664) : const Color(0xffC6A664),
+              color: isSelected ? AppColors.primary : AppColors.primary,
               width: isSelected ? 2 : 1,
             ),
             borderRadius: BorderRadius.circular(20.r),
@@ -91,7 +93,7 @@ class _ExerciseGridState extends State<ExerciseGrid> {
               children: [
                 SvgPicture.asset(
                   iconPath,
-                  color: isSelected ?  Colors.white : Color(0xffC6A664),
+                  color: isSelected ?  Colors.white : AppColors.primary,
                   width: 22.w,
                   height: 22.h,
                 ),

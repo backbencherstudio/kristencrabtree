@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:kristencrabtree/core/constant/route_names.dart';
-import '../../../../../app/widgets/appbar/simple_appbar.dart';
+import '../../../../../app/widgets/appbar/custom_app_bar.dart';
+import '../../../../../core/constant/app_colors.dart';
 
 class MeditationAndWisdom extends StatefulWidget {
   const MeditationAndWisdom({super.key});
@@ -48,7 +49,7 @@ class _MeditationAndWisdomState extends State<MeditationAndWisdom> {
 
                 decoration: BoxDecoration(
                   color: Color(0xffF9F6F0),
-                  border: Border.all(color: Color(0xffC6A664)),
+                  border: Border.all(color: AppColors.primary),
                   borderRadius: BorderRadius.circular(16.r),
                 ),
                 child: Padding(
@@ -79,7 +80,7 @@ class _MeditationAndWisdomState extends State<MeditationAndWisdom> {
                             style: TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 14,
-                              color: Color(0xffC6A664),
+                              color: AppColors.primary,
                             ),
                           ),
                           Spacer(),
@@ -144,7 +145,7 @@ class _MeditationAndWisdomState extends State<MeditationAndWisdom> {
 
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            border: Border.all(color: Color(0xffC6A664)),
+                            border: Border.all(color: AppColors.primary),
                             borderRadius: BorderRadius.circular(16.r),
                           ),
                           child: Padding(
@@ -163,7 +164,7 @@ class _MeditationAndWisdomState extends State<MeditationAndWisdom> {
                                     ),
                                   ),
                                   SizedBox(width: 20.w,),
-                                  Icon(Icons.star_border,color: Color(0xffC6A664),size: 25.sp,),
+                                  Icon(Icons.star_border,color: AppColors.primary,size: 25.sp,),
                                   SizedBox(width: 5.w,),
                                   Icon(Icons.share_outlined,color: Color(0xff1D1F2C),),
 
@@ -191,7 +192,7 @@ class _MeditationAndWisdomState extends State<MeditationAndWisdom> {
                                       height: 30.h,
                                       child: ElevatedButton(
                                         style: ElevatedButton.styleFrom(
-                                          backgroundColor: Color(0xffC6A664),
+                                          backgroundColor: AppColors.primary,
                                           shape: RoundedRectangleBorder(
                                             borderRadius: BorderRadius.circular(8.r),
                                           ),
