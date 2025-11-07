@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../../../app/widgets/appbar/simple_appbar.dart';
+import '../../../../../app/widgets/appbar/custom_app_bar.dart';
+import '../../../../../core/constant/app_colors.dart';
 
 class NewQuoteEntry extends StatefulWidget {
   const NewQuoteEntry({super.key});
@@ -48,20 +49,20 @@ class _NewQuoteEntryState extends State<NewQuoteEntry> {
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                     borderSide: const BorderSide(
-                      color: Color(0xffC6A664),
+                      color: AppColors.primary,
                       width: 1.5,
                     ),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                     borderSide: const BorderSide(
-                      color: Color(0xffC6A664),
+                      color: AppColors.primary,
                       width: 2,
                     ),
                   ),
                 ),
                 style: const TextStyle(color: Colors.black),
-                cursorColor: Color(0xffC6A664),
+                cursorColor: AppColors.primary,
               ),
 
               Text(
@@ -85,15 +86,15 @@ class _NewQuoteEntryState extends State<NewQuoteEntry> {
                   contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
-                    borderSide: const BorderSide(color: Color(0xffC6A664), width: 1.5),
+                    borderSide: const BorderSide(color: AppColors.primary, width: 1.5),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
-                    borderSide: const BorderSide(color: Color(0xffC6A664), width: 2),
+                    borderSide: const BorderSide(color: AppColors.primary, width: 2),
                   ),
                 ),
                 style: const TextStyle(color: Colors.black),
-                cursorColor: Color(0xffC6A664),
+                cursorColor: AppColors.primary,
               ),
               Text(
                 'Quote Reason',
@@ -116,21 +117,21 @@ class _NewQuoteEntryState extends State<NewQuoteEntry> {
                   contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
-                    borderSide: const BorderSide(color: Color(0xffC6A664), width: 1.5),
+                    borderSide: const BorderSide(color: AppColors.primary, width: 1.5),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
-                    borderSide: const BorderSide(color: Color(0xffC6A664), width: 2),
+                    borderSide: const BorderSide(color: AppColors.primary, width: 2),
                   ),
                 ),
                 style: const TextStyle(color: Colors.black),
-                cursorColor: Color(0xffC6A664),
+                cursorColor: AppColors.primary,
               ),
               SizedBox(height: 10.h,),
               
               ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor:Color(0xffC6A664),
+                    backgroundColor:AppColors.primary,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30.r),
                     ),

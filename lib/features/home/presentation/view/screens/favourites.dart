@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:kristencrabtree/app/widgets/appbar/simple_appbar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../../../app/widgets/appbar/custom_app_bar.dart';
+import '../../../../../core/constant/app_colors.dart';
 
 class Favourites extends StatefulWidget {
   const Favourites({super.key});
@@ -26,7 +28,7 @@ class _FavouritesState extends State<Favourites> {
 
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      border: Border.all(color: Color(0xffC6A664)),
+                      border: Border.all(color: AppColors.primary),
                       borderRadius: BorderRadius.circular(16.r),
                     ),
                     child: Padding(
@@ -45,7 +47,7 @@ class _FavouritesState extends State<Favourites> {
                               ),
                             ),
                             SizedBox(width: 20.w,),
-                            Icon(Icons.star_border,color: Color(0xffC6A664),size: 25.sp,),
+                            Icon(Icons.star_border,color: AppColors.primary,size: 25.sp,),
                             SizedBox(width: 5.w,),
                             Icon(Icons.share_outlined,color: Color(0xff1D1F2C),),
 
@@ -73,7 +75,7 @@ class _FavouritesState extends State<Favourites> {
                                 height: 30.h,
                                 child: ElevatedButton(
                                   style: ElevatedButton.styleFrom(
-                                    backgroundColor: Color(0xffC6A664),
+                                    backgroundColor: AppColors.primary,
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(8.r),
                                     ),

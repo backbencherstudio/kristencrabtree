@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:kristencrabtree/features/exercise/presentation/view/screens/exercise/exercise_screen.dart';
 import 'package:provider/provider.dart';
+import '../../../../core/constant/app_colors.dart';
 import '../../../../gen/assets.gen.dart';
 import '../../../home/presentation/view/home_screen.dart';
 import '../view_model/parent_screen_provider.dart';
@@ -37,7 +39,7 @@ class _ParentScreenState extends State<ParentScreen>
         final List<Widget> pages = [
           const HomeScreen(),
           const HomeScreen(),
-          const HomeScreen(),
+          const ExerciseScreen(),
           const HomeScreen(),
         ];
 
@@ -48,21 +50,21 @@ class _ParentScreenState extends State<ParentScreen>
           right: true,
           top: false,
           bottom: true,
-            child: Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Column(
-                children: [
-                  Expanded(
-                    child: IndexedStack(
-                      index: navParentProvider.selectedIndex,
-                      children: pages,
-                    ),
+            child: Column(
+              children: [
+                Expanded(
+                  child: IndexedStack(
+                    index: navParentProvider.selectedIndex,
+                    children: pages,
                   ),
-                  Container(
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 8.w),
+                  child: Container(
                     height: 80.h,
                     width: 390.w,
                     decoration: BoxDecoration(
-                      color: Color(0xffC6A664),
+                      color: AppColors.primary,
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey,
@@ -85,12 +87,9 @@ class _ParentScreenState extends State<ParentScreen>
                             index: 0,
                             label: 'Home',
                             iconPath: Assets.icons.parentHome,
-                            selectedIconPath: 'assets/icons/home-selected.svg',
                             isSelected: navParentProvider.selectedIndex == 0,
-                            selectedIconColor: const Color(0xffC6A664),
+                            selectedIconColor: AppColors.primary,
                             unselectedIconColor: Colors.grey.shade700,
-                            width: 23.w,
-                            height: 23.h,
                           ),
                         ),
 
@@ -100,12 +99,9 @@ class _ParentScreenState extends State<ParentScreen>
                             index: 1,
                             label: 'Journal',
                             iconPath: Assets.icons.parentJournal,
-                            selectedIconPath: 'assets/icons/search-selected.svg',
                             isSelected: navParentProvider.selectedIndex == 1,
-                            selectedIconColor: const Color(0xffC6A664),
+                            selectedIconColor: AppColors.primary,
                             unselectedIconColor: Colors.grey.shade700,
-                            width: 24.w,
-                            height: 24.h,
                           ),
                         ),
 
@@ -115,12 +111,9 @@ class _ParentScreenState extends State<ParentScreen>
                             index: 2,
                             label: 'Exercises',
                             iconPath: Assets.icons.parentExercises,
-                            selectedIconPath: 'assets/icons/result_selected.svg',
                             isSelected: navParentProvider.selectedIndex == 2,
-                            selectedIconColor: const Color(0xffC6A664),
+                            selectedIconColor: AppColors.primary,
                             unselectedIconColor: Colors.white,
-                            width: 23.w,
-                            height: 23.h,
                             shouldChangeIconColor: true,
                           ),
                         ),
@@ -130,13 +123,10 @@ class _ParentScreenState extends State<ParentScreen>
                             context: context,
                             index: 3,
                             label: 'Murmuration',
-                            iconPath: 'assets/icons/parent_murmuration.svg',
-                            selectedIconPath: 'assets/icons/profile_selected.svg',
+                            iconPath: Assets.icons.parentMurmuration,
                             isSelected: navParentProvider.selectedIndex == 3,
-                            selectedIconColor: const Color(0xffC6A664),
+                            selectedIconColor: AppColors.primary,
                             unselectedIconColor: Colors.white,
-                            width: 23.w,
-                            height: 23.h,
                             shouldChangeIconColor: true,
                           ),
                         ),
@@ -144,8 +134,8 @@ class _ParentScreenState extends State<ParentScreen>
                       ],
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         );
@@ -156,14 +146,11 @@ class _ParentScreenState extends State<ParentScreen>
   Widget _buildNavigationDestinationBar({
     required BuildContext context,
     required int index,
-    required double width,
-    required double height,
     required String label,
     required String iconPath,
     required bool isSelected,
-    required String selectedIconPath,
     bool shouldChangeIconColor = false, // 👈 NEW FLAG
-    Color selectedIconColor = const Color(0xffC6A664),
+    Color selectedIconColor = AppColors.primary,
     Color unselectedIconColor = Colors.white,
   }) {
     return GestureDetector(
@@ -188,9 +175,9 @@ class _ParentScreenState extends State<ParentScreen>
           mainAxisSize: MainAxisSize.min,
           children: [
             SvgPicture.asset(
-              isSelected ? selectedIconPath : iconPath,
-              width: width,
-              height: height,
+              iconPath,
+              width: 24.w,
+              height: 24.w,
               colorFilter: shouldChangeIconColor
                   ? ColorFilter.mode(
                 isSelected ? selectedIconColor : unselectedIconColor,

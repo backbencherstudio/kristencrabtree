@@ -6,5 +6,7 @@ class RouteNames {
   static const String myQuotes = 'myQuotes';
   static const String meditationAndWisdom = 'meditationAndWisdom';
   static const String favourites = 'favourites';
+  static const String emotionalBodyExcavation = 'emotionalBodyExcavation';
+  static const String completedScreen = 'completedScreen';
 
 }
