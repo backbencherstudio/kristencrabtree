@@ -90,6 +90,7 @@ class _LayerThreeState extends State<LayerThree> {
               'Make one small change in your routine that shifts your experience',
               'Create a different goal of your choosing',
             ],
+            index: 2,
           ),
           SizedBox(height: 8.h),
           PrimaryButton(

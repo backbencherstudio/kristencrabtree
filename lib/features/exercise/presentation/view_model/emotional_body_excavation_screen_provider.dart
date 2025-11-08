@@ -20,12 +20,21 @@ class EmotionalBodyExcavationScreenProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  String _selectedOption = "Fear";
-  String get selectedOption => _selectedOption;
+  String _selectedOption1 = "Fear";
+  String get selectedOption1 => _selectedOption1;
 
-  void setSelectedOption(String option) {
-    _selectedOption = option;
-    debugPrint('---Selected Option : $_selectedOption---');
+  void setSelectedOption1(String option) {
+    _selectedOption1 = option;
+    debugPrint('---Selected Option : $_selectedOption1---');
+    notifyListeners();
+  }
+
+  String _selectedOption2 = "Reflect on this further";
+  String get selectedOption2 => _selectedOption2;
+
+  void setSelectedOption2(String option) {
+    _selectedOption2 = option;
+    debugPrint('---Selected Option : $_selectedOption2---');
     notifyListeners();
   }
 }
