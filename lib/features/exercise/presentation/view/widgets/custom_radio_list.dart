@@ -6,20 +6,22 @@ import 'package:provider/provider.dart';
 import '../../view_model/emotional_body_excavation_screen_provider.dart';
 
 class CustomRadioList extends StatelessWidget {
-  const CustomRadioList({super.key, required this.radioList});
+  const CustomRadioList({super.key, required this.radioList, required this.index});
 
   final List<String> radioList;
+  final int index;
 
   @override
   Widget build(BuildContext context) {
     final provider = context.watch<EmotionalBodyExcavationScreenProvider>();
     return Column(
       children: radioList.map((option) {
-        final isSelected = option == provider.selectedOption;
+        final selectedOption = (index == 1) ? provider.selectedOption1 : provider.selectedOption2;
+        final isSelected = option == selectedOption;
 
         return GestureDetector(
           onTap: () {
-            context.read<EmotionalBodyExcavationScreenProvider>().setSelectedOption(option);
+            (index == 1) ? context.read<EmotionalBodyExcavationScreenProvider>().setSelectedOption1(option) : context.read<EmotionalBodyExcavationScreenProvider>().setSelectedOption2(option);
           },
           child: Container(
             margin: EdgeInsets.only(bottom: 10.h),
@@ -41,9 +43,9 @@ class CustomRadioList extends StatelessWidget {
               children: [
                 Radio<String>(
                   value: option,
-                  groupValue: provider.selectedOption,
+                  groupValue: index == 1 ? provider.selectedOption1 : provider.selectedOption2,
                   onChanged: (value) {
-                    context.read<EmotionalBodyExcavationScreenProvider>().setSelectedOption(value!);
+                    (index == 1) ? context.read<EmotionalBodyExcavationScreenProvider>().setSelectedOption1(value!) : context.read<EmotionalBodyExcavationScreenProvider>().setSelectedOption2(value!);
                   },
                   activeColor: AppColors.primary
                 ),

@@ -101,8 +101,9 @@ class _LayerOneState extends State<LayerOne> {
               'Loneliness',
               'Other',
             ],
+            index: 1,
           ),
-          if (provider.selectedOption == 'Other')
+          if (provider.selectedOption1 == 'Other')
             CustomTextField(
               hintText: 'Share your thoughts......',
               controller: _thoughtController,
