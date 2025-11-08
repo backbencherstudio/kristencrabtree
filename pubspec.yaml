@@ -45,6 +45,11 @@ dependencies:
   carousel_slider: ^5.1.1
   shimmer: ^3.0.0
   pin_code_fields: ^8.0.1
+  just_audio:
+  audio_waveforms:
+  record:
+  path_provider:
+  path:
 
 
 dev_dependencies:
