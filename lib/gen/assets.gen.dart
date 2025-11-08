@@ -62,6 +62,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/image.svg
   String get image => 'assets/icons/image.svg';
 
+  /// File path: assets/icons/image_up.svg
+  String get imageUp => 'assets/icons/image_up.svg';
+
   /// File path: assets/icons/meditation.svg
   String get meditation => 'assets/icons/meditation.svg';
 
@@ -95,11 +98,17 @@ class $AssetsIconsGen {
   /// File path: assets/icons/play.svg
   String get play => 'assets/icons/play.svg';
 
+  /// File path: assets/icons/record.svg
+  String get record => 'assets/icons/record.svg';
+
   /// File path: assets/icons/sent.svg
   String get sent => 'assets/icons/sent.svg';
 
   /// File path: assets/icons/settings.svg
   String get settings => 'assets/icons/settings.svg';
+
+  /// File path: assets/icons/share.svg
+  String get share => 'assets/icons/share.svg';
 
   /// File path: assets/icons/star.svg
   String get star => 'assets/icons/star.svg';
@@ -131,6 +140,7 @@ class $AssetsIconsGen {
     heart,
     heartFilled,
     image,
+    imageUp,
     meditation,
     message,
     mike,
@@ -142,8 +152,10 @@ class $AssetsIconsGen {
     parentJournal,
     parentMurmuration,
     play,
+    record,
     sent,
     settings,
+    share,
     star,
     success,
     tik,
@@ -154,6 +166,9 @@ class $AssetsIconsGen {
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/post.png
+  AssetGenImage get post => const AssetGenImage('assets/images/post.png');
+
   /// File path: assets/images/user.png
   AssetGenImage get user => const AssetGenImage('assets/images/user.png');
 
@@ -161,7 +176,7 @@ class $AssetsImagesGen {
   AssetGenImage get xp => const AssetGenImage('assets/images/xp.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [user, xp];
+  List<AssetGenImage> get values => [post, user, xp];
 }
 
 class Assets {
