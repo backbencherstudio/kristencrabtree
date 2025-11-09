@@ -98,35 +98,39 @@ class _NewJournalTextAudioState extends State<NewJournalTextAudio>
 
               Container(
                 width: 230.w,
+                height: 42.h,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30.r),
                   color: Colors.white,
                   border: Border.all(color: AppColors.primary, width: 1),
                 ),
-                child: TabBar(
-                  controller: _tabController,
-                  indicatorColor: Colors.transparent,
-                  labelPadding: EdgeInsets.zero,
-                  dividerColor: Colors.transparent,
-                  tabs: [
-                    Tab(
-                      child: _buildTab(
-                        "_ Text",
-                        Icons.edit_outlined,
-                        _tabController.index == 0,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TabBar(
+                    controller: _tabController,
+                    indicatorColor: Colors.transparent,
+                    labelPadding: EdgeInsets.zero,
+                    dividerColor: Colors.transparent,
+                    tabs: [
+                      Tab(
+                        child: _buildTab(
+                          "_ Text",
+                          Icons.edit_outlined,
+                          _tabController.index == 0,
+                        ),
                       ),
-                    ),
-                    Tab(
-                      child: _buildTab(
-                        "Audio",
-                        Icons.mic_none,
-                        _tabController.index == 1,
+                      Tab(
+                        child: _buildTab(
+                          "Audio",
+                          Icons.mic_none,
+                          _tabController.index == 1,
+                        ),
                       ),
-                    ),
-                  ],
-                  onTap: (_) {
-                    setState(() {});
-                  },
+                    ],
+                    onTap: (_) {
+                      setState(() {});
+                    },
+                  ),
                 ),
               ),
 
