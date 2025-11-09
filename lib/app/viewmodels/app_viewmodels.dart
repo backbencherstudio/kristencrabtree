@@ -1,3 +1,4 @@
+import 'package:kristencrabtree/features/auth/presentation/view_model/reset_password_provider.dart';
 import 'package:kristencrabtree/features/payment/presentation/view_model/plan_provider.dart';
 import 'package:kristencrabtree/features/preference_setup/presentation/view_model/preference_provider.dart';
 import 'package:provider/provider.dart';
@@ -18,5 +19,6 @@ class AppViewModels {
     ChangeNotifierProvider<CreatePostScreenProvider>(create: (_) => getIt<CreatePostScreenProvider>(),),
     ChangeNotifierProvider<PreferenceProvider>(create: (_) => getIt<PreferenceProvider>(),),
     ChangeNotifierProvider<PlanProvider>(create: (_) => getIt<PlanProvider>(),),
+    ChangeNotifierProvider<ResetPasswordProvider>(create: (_) => getIt<ResetPasswordProvider>(),),
   ];
 }

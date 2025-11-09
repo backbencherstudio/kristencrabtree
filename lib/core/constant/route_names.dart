@@ -4,6 +4,9 @@ class RouteNames {
   static const String loginScreen = 'loginScreen';
   static const String registerScreen = 'registerScreen';
   static const String signUpSelectionScreen = 'signUpSelectionScreen';
+  static const String forgetPassScreen = 'forgetPassScreen';
+  static const String verifyOtpScreen = 'verifyOtpScreen';
+  static const String setPassScreen = 'setPassScreen';
   static const String congratulationScreen = 'congratulationScreen';
   static const String preferenceScreen = 'preferenceScreen';
   static const String chooseJourneyScreen = 'chooseJourneyScreen';
