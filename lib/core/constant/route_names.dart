@@ -1,6 +1,11 @@
 class RouteNames {
   static const String splashScreen = '/';
   static const String homeScreen = 'homeScreen';
+  static const String loginScreen = 'loginScreen';
+  static const String registerScreen = 'registerScreen';
+  static const String signUpSelectionScreen = 'signUpSelectionScreen';
+  static const String congratulationScreen = 'congratulationScreen';
+  static const String onboardingScreen = 'onboardingScreen';
   static const String parentScreen = 'parentScreen';
   static const String newQuoteEntry = 'newQuoteEntry';
   static const String myQuotes = 'myQuotes';
@@ -12,4 +17,6 @@ class RouteNames {
   static const String newJournalTextAudio = 'newJournalTextAudio';
   static const String recorderScreen = 'recorderScreen';
 
+  static const String createPostScreen = 'createPostScreen';
+  static const String postCommentScreen = 'postCommentScreen';
 }

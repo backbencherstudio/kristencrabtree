@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:kristencrabtree/features/community/presentation/view/screens/community/community_screen.dart';
 import 'package:kristencrabtree/features/exercise/presentation/view/screens/exercise/exercise_screen.dart';
 import 'package:provider/provider.dart';
 import '../../../../core/constant/app_colors.dart';
@@ -41,7 +42,7 @@ class _ParentScreenState extends State<ParentScreen>
           const HomeScreen(),
           const JournalScreen(),
           const ExerciseScreen(),
-          const HomeScreen(),
+          const CommunityScreen(),
         ];
 
         return Scaffold(
