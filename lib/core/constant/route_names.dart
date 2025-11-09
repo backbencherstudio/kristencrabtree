@@ -20,6 +20,15 @@ class RouteNames {
   static const String favourites = 'favourites';
   static const String emotionalBodyExcavation = 'emotionalBodyExcavation';
   static const String completedScreen = 'completedScreen';
+  static const String journalScreen = 'journalScreen';
+  static const String newJournalTextAudio = 'newJournalTextAudio';
+  static const String recorderScreen = 'recorderScreen';
   static const String createPostScreen = 'createPostScreen';
   static const String postCommentScreen = 'postCommentScreen';
+  static const String profileScreen = 'profileScreen';
+  static const String accountScreen = 'accountScreen';
+  static const String notificationScreen = 'notificationScreen';
+  static const String aboutScreen = 'aboutScreen';
+  static const String termsOfServiceScreen = 'termsOfServiceScreen';
+  static const String privacyPolicyScreen = 'privacyPolicyScreen';
 }

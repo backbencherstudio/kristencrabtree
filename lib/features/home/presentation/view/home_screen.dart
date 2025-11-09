@@ -147,7 +147,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
 
                       Row(
-                        spacing: 10,
+                        spacing: 8,
                         children: [
                           ElevatedButton(
                             onPressed: () {
@@ -216,7 +216,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       Row(spacing: 10,
                         children: [
                           SizedBox(
-                            width: 145.w,
+                            width: 143.w,
                             height: 35.h,
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
@@ -243,7 +243,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ),
                           SizedBox(
-                            width: 145.w,
+                            width: 143.w,
                             height: 35.h,
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(

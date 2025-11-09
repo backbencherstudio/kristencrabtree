@@ -16,27 +16,53 @@ import '../../features/home/presentation/view/screens/favourites.dart';
 import '../../features/home/presentation/view/screens/meditation_and_wisdom.dart';
 import '../../features/home/presentation/view/screens/my_quotes.dart';
 import '../../features/home/presentation/view/screens/new_quote_entry.dart';
+import '../../features/journal/journal_screen.dart';
+import '../../features/journal/screens/new_journal_text_audio.dart';
+import '../../features/profile/presentation/view/profile_screen.dart';
+import '../../features/profile/presentation/view/screens/about_screen.dart';
+import '../../features/profile/presentation/view/screens/account_screen.dart';
+import '../../features/profile/presentation/view/screens/notification_screen.dart';
+import '../../features/profile/presentation/view/screens/privacy_policy_screen.dart';
+import '../../features/profile/presentation/view/screens/terms_and_service_screen.dart';
 
 class AppRoutes {
   static String initialRoute = RouteNames.splashScreen;
 
   static final Map<String, WidgetBuilder> routes = {
+    //Splash & Onboarding
      RouteNames.splashScreen: (context) => const WelcomeScreen(),
      RouteNames.onboardingScreen: (context) => const OnboardingScreen(),
+
+    //Auth
      RouteNames.signUpSelectionScreen: (context) => const SignUpSelectionScreen(),
      RouteNames.registerScreen: (context) => const RegisterScreen(),
      RouteNames.preferenceScreen: (context) => const PreferencesScreen(),
      RouteNames.loginScreen: (context) => const LoginScreen(),
-     RouteNames.homeScreen: (context) => const HomeScreen(),
+
+    //Home
      RouteNames.parentScreen: (context) => const ParentScreen(),
+     RouteNames.homeScreen: (context) => const HomeScreen(),
      RouteNames.newQuoteEntry: (context) => const NewQuoteEntry(),
      RouteNames.myQuotes: (context) => const MyQuotes(),
      RouteNames.meditationAndWisdom: (context) => const MeditationAndWisdom(),
      RouteNames.favourites: (context) => const Favourites(),
+
      RouteNames.emotionalBodyExcavation: (context) => const EmotionalBodyExcavationScreen(),
      RouteNames.completedScreen: (context) => const CompletedScreen(),
+
+    //Journal
+     RouteNames.journalScreen: (context) => const JournalScreen(),
+     RouteNames.newJournalTextAudio: (context) => const NewJournalTextAudio(),
+
      RouteNames.createPostScreen: (context) => const CreatePostScreen(),
      RouteNames.postCommentScreen: (context) => const PostCommentScreen(),
 
+    //Profile
+     RouteNames.profileScreen: (context) => const ProfileScreen(),
+     RouteNames.accountScreen: (context) => const AccountScreen(),
+     RouteNames.notificationScreen: (context) => const NotificationScreen(),
+     RouteNames.aboutScreen: (context) => const AboutScreen(),
+     RouteNames.termsOfServiceScreen: (context) => const TermsOfServiceScreen(),
+     RouteNames.privacyPolicyScreen: (context) => const PrivacyPolicyScreen(),
   };
 }

@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:kristencrabtree/core/constant/route_names.dart';
 
 import '../../../../../core/constant/app_colors.dart';
 
@@ -35,13 +36,18 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget{
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              CircleAvatar(
-                radius: 28.r,
-                backgroundColor: Colors.white,
-                child: Image.asset(
-                  'assets/images/user.png',
-                  width: 60.w,
-                  height: 60.h,
+              GestureDetector(
+                onTap: (){
+                  Navigator.pushNamed(context, RouteNames.profileScreen);
+                },
+                child: CircleAvatar(
+                  radius: 28.r,
+                  backgroundColor: Colors.white,
+                  child: Image.asset(
+                    'assets/images/user.png',
+                    width: 60.w,
+                    height: 60.h,
+                  ),
                 ),
               ),
               SizedBox(height: 8.h),
