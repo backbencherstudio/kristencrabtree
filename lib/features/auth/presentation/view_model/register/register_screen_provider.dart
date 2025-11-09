@@ -23,7 +23,7 @@ class RegisterScreenProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  bool _isChecked = true;
+  bool _isChecked = false;
   bool get isChecked => _isChecked;
 
   void toggleCheck(bool value) {

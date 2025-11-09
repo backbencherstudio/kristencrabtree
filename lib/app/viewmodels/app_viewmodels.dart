@@ -1,3 +1,4 @@
+import 'package:kristencrabtree/features/preference_setup/presentation/view_model/preference_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
 import '../../core/di/di_config.dart';
@@ -14,5 +15,6 @@ class AppViewModels {
     ChangeNotifierProvider<RegisterScreenProvider>(create: (_) => getIt<RegisterScreenProvider>(),),
     ChangeNotifierProvider<EmotionalBodyExcavationScreenProvider>(create: (_) => getIt<EmotionalBodyExcavationScreenProvider>(),),
     ChangeNotifierProvider<CreatePostScreenProvider>(create: (_) => getIt<CreatePostScreenProvider>(),),
+    ChangeNotifierProvider<PreferenceProvider>(create: (_) => getIt<PreferenceProvider>(),),
   ];
 }

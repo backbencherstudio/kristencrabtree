@@ -8,6 +8,7 @@ import 'package:kristencrabtree/features/exercise/presentation/view/screens/comp
 import 'package:kristencrabtree/features/exercise/presentation/view/screens/emotional_body_excavation/emotional_body_excavation_screen.dart';
 import 'package:kristencrabtree/features/onboarding/presentation/view/screen/onboarding_screen.dart';
 import 'package:kristencrabtree/features/parent/presentation/view/parent_screen.dart';
+import 'package:kristencrabtree/features/preference_setup/presentation/view/screens/focus_area/preferences_screen.dart';
 import 'package:kristencrabtree/features/splash/presentation/view/screen/splash_screen.dart';
 import '../../core/constant/route_names.dart';
 import '../../features/home/presentation/view/home_screen.dart';
@@ -35,6 +36,7 @@ class AppRoutes {
     //Auth
      RouteNames.signUpSelectionScreen: (context) => const SignUpSelectionScreen(),
      RouteNames.registerScreen: (context) => const RegisterScreen(),
+     RouteNames.preferenceScreen: (context) => const PreferencesScreen(),
      RouteNames.loginScreen: (context) => const LoginScreen(),
 
     //Home

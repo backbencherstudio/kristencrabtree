@@ -5,6 +5,13 @@ class RouteNames {
   static const String registerScreen = 'registerScreen';
   static const String signUpSelectionScreen = 'signUpSelectionScreen';
   static const String congratulationScreen = 'congratulationScreen';
+  static const String preferenceScreen = 'preferenceScreen';
+  static const String focusAreaScreen = 'focusAreaScreen';
+  static const String weeklyPracticeScreen = 'weeklyPracticeScreen';
+  static const String contentPreferenceScreen = 'contentPreferenceScreen';
+  static const String setFrequencyScreen = 'setFrequencyScreen';
+  static const String chooseJourneyScreen = 'chooseJourneyScreen';
+  static const String confirmPlanScreen = 'confirmPlanScreen';
   static const String onboardingScreen = 'onboardingScreen';
   static const String parentScreen = 'parentScreen';
   static const String newQuoteEntry = 'newQuoteEntry';
