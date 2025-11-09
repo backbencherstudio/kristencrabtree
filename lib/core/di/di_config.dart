@@ -9,6 +9,7 @@ import '../../features/auth/data/repositories/auth_repository_impl.dart';
 import '../../features/auth/domain/repository/auth_repository.dart';
 import '../../features/auth/presentation/view_model/login/login_screen_provider.dart';
 import '../../features/auth/presentation/view_model/register/register_screen_provider.dart';
+import '../../features/auth/presentation/view_model/reset_password_provider.dart';
 import '../../features/parent/presentation/view_model/parent_screen_provider.dart';
 import '../../features/preference_setup/presentation/view_model/preference_provider.dart';
 import '../services/api_service/api_services.dart';
@@ -27,6 +28,7 @@ Future<void> diConfig() async {
 
   getIt.registerFactory<LoginScreenProvider>(() => LoginScreenProvider(getIt<AuthRepository>()),);
   getIt.registerFactory<RegisterScreenProvider>(() => RegisterScreenProvider(getIt<AuthRepository>()),);
+  getIt.registerFactory<ResetPasswordProvider>(() => ResetPasswordProvider(getIt<AuthRepository>()),);
   getIt.registerFactory<PreferenceProvider>(() => PreferenceProvider(getIt<PreferencesRepository>()),);
 
 

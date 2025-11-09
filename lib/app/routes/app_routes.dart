@@ -1,7 +1,10 @@
 import 'package:flutter/cupertino.dart';
+import 'package:kristencrabtree/features/auth/presentation/view/screens/forget_pass/forget_pass_screen.dart';
 import 'package:kristencrabtree/features/auth/presentation/view/screens/login/login_screen.dart';
 import 'package:kristencrabtree/features/auth/presentation/view/screens/register/register_screen.dart';
+import 'package:kristencrabtree/features/auth/presentation/view/screens/set_pass/set_pass_screen.dart';
 import 'package:kristencrabtree/features/auth/presentation/view/screens/sign_up_selection/sign_up_selection_screen.dart';
+import 'package:kristencrabtree/features/auth/presentation/view/screens/verify_otp/verify_otp_screen.dart';
 import 'package:kristencrabtree/features/community/presentation/view/screens/create_post/create_post_screen.dart';
 import 'package:kristencrabtree/features/community/presentation/view/screens/post_comment/post_comment_screen.dart';
 import 'package:kristencrabtree/features/exercise/presentation/view/screens/completed/completed_screen.dart';
@@ -39,6 +42,9 @@ class AppRoutes {
      RouteNames.registerScreen: (context) => const RegisterScreen(),
      RouteNames.preferenceScreen: (context) => const PreferencesScreen(),
      RouteNames.loginScreen: (context) => const LoginScreen(),
+     RouteNames.forgetPassScreen: (context) => const ForgetPassScreen(),
+     RouteNames.verifyOtpScreen: (context) => const VerifyOtpScreen(),
+     RouteNames.setPassScreen: (context) => const SetPassScreen(),
      RouteNames.chooseJourneyScreen: (context) => const ChoosePaymentPlanScreen(),
 
     //Home
