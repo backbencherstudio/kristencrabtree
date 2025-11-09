@@ -44,7 +44,7 @@ class WeeklyPracticeWidget extends StatelessWidget {
           },
           child: CustomCardBase(
             borderColor: isSelected ? AppColors.primary : Colors.black12,
-            bgColor: AppColors.background,
+            bgColor: isSelected ? AppColors.primary.withOpacity(0.1) : AppColors.background,
             child: Row(
               children: [
                 Radio<int>(

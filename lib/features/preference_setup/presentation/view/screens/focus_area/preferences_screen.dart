@@ -92,8 +92,8 @@ class PreferencesScreen extends StatelessWidget {
                 PrimaryButton(
                   onTap: () {
                     if (provider.selectedIndex == 3) {
-                      context.read<PreferenceProvider>().resetIndex();
-                      Navigator.pushNamed(context, RouteNames.loginScreen);
+                      Navigator.pushNamed(context, RouteNames.chooseJourneyScreen);
+                      Future.delayed(Duration(seconds: 2)).then((_) => context.read<PreferenceProvider>().resetIndex());
                     } else {
                       context.read<PreferenceProvider>().incIndex();
                     }

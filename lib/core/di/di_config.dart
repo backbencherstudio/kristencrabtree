@@ -2,6 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 import 'package:kristencrabtree/features/community/presentation/view_model/create_post_screen_provider.dart';
 import 'package:kristencrabtree/features/exercise/presentation/view_model/emotional_body_excavation_screen_provider.dart';
+import 'package:kristencrabtree/features/payment/presentation/view_model/plan_provider.dart';
 import 'package:kristencrabtree/features/preference_setup/data/repositories/preferences_repository_impl.dart';
 import 'package:kristencrabtree/features/preference_setup/domain/repository/preferences_repository.dart';
 import '../../features/auth/data/repositories/auth_repository_impl.dart';
@@ -37,5 +38,8 @@ Future<void> diConfig() async {
   );
   getIt.registerLazySingleton<CreatePostScreenProvider>(
         () => CreatePostScreenProvider(),
+  );
+  getIt.registerLazySingleton<PlanProvider>(
+        () => PlanProvider(),
   );
 }

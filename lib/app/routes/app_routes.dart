@@ -18,6 +18,7 @@ import '../../features/home/presentation/view/screens/my_quotes.dart';
 import '../../features/home/presentation/view/screens/new_quote_entry.dart';
 import '../../features/journal/journal_screen.dart';
 import '../../features/journal/screens/new_journal_text_audio.dart';
+import '../../features/payment/presentation/view/screens/choose_payment_plan/choose_payment_plan_screen.dart';
 import '../../features/profile/presentation/view/profile_screen.dart';
 import '../../features/profile/presentation/view/screens/about_screen.dart';
 import '../../features/profile/presentation/view/screens/account_screen.dart';
@@ -38,6 +39,7 @@ class AppRoutes {
      RouteNames.registerScreen: (context) => const RegisterScreen(),
      RouteNames.preferenceScreen: (context) => const PreferencesScreen(),
      RouteNames.loginScreen: (context) => const LoginScreen(),
+     RouteNames.chooseJourneyScreen: (context) => const ChoosePaymentPlanScreen(),
 
     //Home
      RouteNames.parentScreen: (context) => const ParentScreen(),

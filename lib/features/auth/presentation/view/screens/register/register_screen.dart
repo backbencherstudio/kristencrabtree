@@ -5,6 +5,7 @@ import 'package:kristencrabtree/features/auth/presentation/view_model/login/logi
 import 'package:provider/provider.dart';
 import '../../../../../../app/widgets/buttons/primary_button.dart';
 import '../../../../../../app/widgets/buttons/social_buttons.dart';
+import '../../../../../../app/widgets/dialogs/congratulation_dialog.dart';
 import '../../../../../../core/constant/app_colors.dart';
 import '../../../../../../core/constant/route_names.dart';
 import '../../../../../../gen/assets.gen.dart';
@@ -164,10 +165,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
                 PrimaryButton(
                   onTap: () {
-                    Navigator.pushNamed(
+                    CongratulationDialog.show(context, 'Account Created', () {
+                      Navigator.pushNamedAndRemoveUntil(
                         context,
-                        RouteNames.preferenceScreen,
-                    );
+                        RouteNames.loginScreen,
+                        (_) => false,
+                      );
+                    }, 'Done');
                   },
                   buttonTitle: 'Sign up',
                   isRounded: true,

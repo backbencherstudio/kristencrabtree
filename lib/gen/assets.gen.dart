@@ -14,6 +14,12 @@ import 'package:flutter/widgets.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/about.svg
+  String get about => 'assets/icons/about.svg';
+
+  /// File path: assets/icons/account_P.svg
+  String get accountP => 'assets/icons/account_P.svg';
+
   /// File path: assets/icons/ai_star.svg
   String get aiStar => 'assets/icons/ai_star.svg';
 
@@ -59,6 +65,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/edit_n.svg
   String get editN => 'assets/icons/edit_n.svg';
 
+  /// File path: assets/icons/edit_profile.svg
+  String get editProfile => 'assets/icons/edit_profile.svg';
+
   /// File path: assets/icons/excercise_completed.svg
   String get excerciseCompleted => 'assets/icons/excercise_completed.svg';
 
@@ -95,6 +104,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/list.svg
   String get list => 'assets/icons/list.svg';
 
+  /// File path: assets/icons/logout.svg
+  String get logout => 'assets/icons/logout.svg';
+
   /// File path: assets/icons/meditation.svg
   String get meditation => 'assets/icons/meditation.svg';
 
@@ -118,6 +130,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/notification.svg
   String get notification => 'assets/icons/notification.svg';
+
+  /// File path: assets/icons/notifications.svg
+  String get notifications => 'assets/icons/notifications.svg';
 
   /// File path: assets/icons/onboard1.svg
   String get onboard1 => 'assets/icons/onboard1.svg';
@@ -145,6 +160,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/premium.svg
   String get premium => 'assets/icons/premium.svg';
+
+  /// File path: assets/icons/profile.svg
+  String get profile => 'assets/icons/profile.svg';
 
   /// File path: assets/icons/quote.svg
   String get quote => 'assets/icons/quote.svg';
@@ -181,6 +199,8 @@ class $AssetsIconsGen {
 
   /// List of all assets
   List<String> get values => [
+    about,
+    accountP,
     aiStar,
     alert,
     apple,
@@ -196,6 +216,7 @@ class $AssetsIconsGen {
     dart,
     edit,
     editN,
+    editProfile,
     excerciseCompleted,
     explore,
     eye,
@@ -208,6 +229,7 @@ class $AssetsIconsGen {
     image,
     imageUp,
     list,
+    logout,
     meditation,
     meditationP,
     message,
@@ -216,6 +238,7 @@ class $AssetsIconsGen {
     musscle,
     newJournal,
     notification,
+    notifications,
     onboard1,
     onboard2,
     onboard3,
@@ -225,6 +248,7 @@ class $AssetsIconsGen {
     parentMurmuration,
     play,
     premium,
+    profile,
     quote,
     record,
     sent,
@@ -241,6 +265,9 @@ class $AssetsIconsGen {
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
+
+  /// File path: assets/images/50off.png
+  AssetGenImage get a50off => const AssetGenImage('assets/images/50off.png');
 
   /// File path: assets/images/appLogo.png
   AssetGenImage get appLogo => const AssetGenImage('assets/images/appLogo.png');
@@ -265,6 +292,7 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<dynamic> get values => [
+    a50off,
     appLogo,
     newJournal,
     popular,
