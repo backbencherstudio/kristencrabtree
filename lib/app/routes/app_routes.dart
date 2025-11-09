@@ -15,6 +15,8 @@ import '../../features/home/presentation/view/screens/favourites.dart';
 import '../../features/home/presentation/view/screens/meditation_and_wisdom.dart';
 import '../../features/home/presentation/view/screens/my_quotes.dart';
 import '../../features/home/presentation/view/screens/new_quote_entry.dart';
+import '../../features/journal/journal_screen.dart';
+import '../../features/journal/screens/new_journal_text_audio.dart';
 
 class AppRoutes {
   static String initialRoute = RouteNames.splashScreen;
@@ -33,6 +35,9 @@ class AppRoutes {
      RouteNames.favourites: (context) => const Favourites(),
      RouteNames.emotionalBodyExcavation: (context) => const EmotionalBodyExcavationScreen(),
      RouteNames.completedScreen: (context) => const CompletedScreen(),
+     RouteNames.journalScreen: (context) => const JournalScreen(),
+      RouteNames.newJournalTextAudio: (context) => const NewJournalTextAudio(),
+      // RouteNames.recorderScreen: (context) => const RecorderScreen(),
      RouteNames.createPostScreen: (context) => const CreatePostScreen(),
      RouteNames.postCommentScreen: (context) => const PostCommentScreen(),
 
