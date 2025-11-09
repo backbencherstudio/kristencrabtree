@@ -1,3 +1,4 @@
+import 'package:kristencrabtree/features/payment/presentation/view_model/plan_provider.dart';
 import 'package:kristencrabtree/features/preference_setup/presentation/view_model/preference_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
@@ -16,5 +17,6 @@ class AppViewModels {
     ChangeNotifierProvider<EmotionalBodyExcavationScreenProvider>(create: (_) => getIt<EmotionalBodyExcavationScreenProvider>(),),
     ChangeNotifierProvider<CreatePostScreenProvider>(create: (_) => getIt<CreatePostScreenProvider>(),),
     ChangeNotifierProvider<PreferenceProvider>(create: (_) => getIt<PreferenceProvider>(),),
+    ChangeNotifierProvider<PlanProvider>(create: (_) => getIt<PlanProvider>(),),
   ];
 }

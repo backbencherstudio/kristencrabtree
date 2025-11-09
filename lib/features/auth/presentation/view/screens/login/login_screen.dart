@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:kristencrabtree/core/services/local_storage_service/preferences_storage.dart';
 import 'package:kristencrabtree/features/auth/presentation/view_model/login/login_screen_provider.dart';
 import 'package:provider/provider.dart';
 import '../../../../../../app/widgets/buttons/primary_button.dart';
@@ -95,8 +96,13 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 SizedBox(height: 12.h),
                 PrimaryButton(
-                  onTap: () {
-                    Navigator.pushNamedAndRemoveUntil(context, RouteNames.parentScreen, (_) => false);
+                  onTap: () async {
+                    final prefToken = await PreferencesStorage().getToken();
+                    if (prefToken != null) {
+                      Navigator.pushNamedAndRemoveUntil(context, RouteNames.parentScreen, (_) => false);
+                    } else {
+                      Navigator.pushNamedAndRemoveUntil(context, RouteNames.preferenceScreen, (_) => false);
+                    }
                   },
                   buttonTitle: 'Sign in',
                   isRounded: true,
