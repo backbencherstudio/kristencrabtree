@@ -50,6 +50,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/daily_excercise.svg
   String get dailyExcercise => 'assets/icons/daily_excercise.svg';
 
+  /// File path: assets/icons/dart.svg
+  String get dart => 'assets/icons/dart.svg';
+
   /// File path: assets/icons/edit.svg
   String get edit => 'assets/icons/edit.svg';
 
@@ -190,6 +193,7 @@ class $AssetsIconsGen {
     cottationSwap,
     currentStreak,
     dailyExcercise,
+    dart,
     edit,
     editN,
     excerciseCompleted,

@@ -95,7 +95,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 SizedBox(height: 12.h),
                 PrimaryButton(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamedAndRemoveUntil(context, RouteNames.parentScreen, (_) => false);
+                  },
                   buttonTitle: 'Sign in',
                   isRounded: true,
                 ),

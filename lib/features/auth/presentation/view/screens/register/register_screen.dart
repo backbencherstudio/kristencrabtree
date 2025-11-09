@@ -164,10 +164,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
                 PrimaryButton(
                   onTap: () {
-                    Navigator.pushNamedAndRemoveUntil(
+                    Navigator.pushNamed(
                         context,
-                        RouteNames.loginScreen,
-                            (_) => false
+                        RouteNames.preferenceScreen,
                     );
                   },
                   buttonTitle: 'Sign up',
