@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import '../../../../core/constant/app_colors.dart';
 import '../../../../gen/assets.gen.dart';
 import '../../../home/presentation/view/home_screen.dart';
+import '../../../journal/journal_screen.dart';
 import '../view_model/parent_screen_provider.dart';
 
 class ParentScreen extends StatefulWidget {
@@ -38,7 +39,7 @@ class _ParentScreenState extends State<ParentScreen>
       builder: (__, navParentProvider, child) {
         final List<Widget> pages = [
           const HomeScreen(),
-          const HomeScreen(),
+          const JournalScreen(),
           const ExerciseScreen(),
           const HomeScreen(),
         ];
